@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Stworka test task</title>
+	</head>
+	<body>
+		<div class="component rounded">
+			<div class="information">
+				<!-- Для изменения степени заполняемости нужно изменить значение переменной i. Также, если i > 50 в классе нужно убрать less -->
+				<div class="progress less" style="--i: 5; --clr: #ffffff">
+					<p>0/7</p>
+				</div>
+
+				<div class="text">
+					<div class="header rounded">Чеклист</div>
+					<div class="info">
+						<div class="completed">Выполнено: 0 из 7 действий</div>
+						<div class="next_action">
+							Следующее действие: Созвониться с клиентом до 23.05.24 12:00
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="button">Открыть чеклист</button>
+		</div>
+	</body>
+</html>
