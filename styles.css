@@ -1,3 +1,4 @@
+/* reset default */
 * {
 	margin: 0;
 	padding: 0;
@@ -10,7 +11,9 @@ body {
 	align-items: center;
 	min-height: 100vh;
 	background-color: #222;
+	color: #fff;
 }
+/* main styles */
 .component {
 	width: 743px;
 	display: flex;
@@ -18,7 +21,6 @@ body {
 	align-items: center;
 	padding: 12px 18px 15px 22px;
 	background-color: #3579f5;
-	color: #fff;
 	border-radius: 10px;
 }
 
@@ -27,6 +29,48 @@ body {
 	gap: 16px;
 	align-items: center;
 }
+
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.header {
+	text-align: center;
+	background-color: #2364db;
+	width: 76px;
+	padding: 0px, 10px, 0px, 10px;
+	font-size: 12px;
+	line-height: 18px;
+	border-radius: 40px;
+}
+
+.completed {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 600;
+}
+
+.header {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.button {
+	padding: 10px, 32px, 10px, 32px;
+	width: 170px;
+	height: 40px;
+	text-align: center;
+	background-color: #f4f8ff;
+	border-radius: 6px;
+	border: none;
+	color: #4777ed;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/* progress bar styles */
 .component .progress {
 	position: relative;
 	border: 1px solid #ffffff80;
@@ -69,43 +113,4 @@ body {
 .component .progress.less::before {
 	background-color: #3579f5;
 	transform: rotate(calc(((var(--i) - 00) * 0.01turn)));
-}
-.text {
-	display: flex;
-	flex-direction: column;
-	gap: 4px;
-}
-
-.header {
-	text-align: center;
-	background-color: #2364db;
-	width: 76px;
-	padding: 0px, 10px, 0px, 10px;
-	font-size: 12px;
-	line-height: 18px;
-	border-radius: 40px;
-}
-
-.completed {
-	font-size: 15px;
-	line-height: 20px;
-	font-weight: 600;
-}
-
-.header {
-	font-size: 12px;
-	line-height: 18px;
-}
-
-.button {
-	padding: 10px, 32px, 10px, 32px;
-	width: 170px;
-	height: 40px;
-	text-align: center;
-	background-color: #f4f8ff;
-	border-radius: 6px;
-	border: none;
-	color: #4777ed;
-	font-size: 14px;
-	line-height: 20px;
 }
